@@ -7,13 +7,17 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <>
-      <Navbar/>
-      <Header/>
-      <BlogList/>
-      <Newsletter/>
-      <Footer/>
-    </>
+ <>
+  <Navbar/>
+
+  <div className="max-w-7xl mx-auto px-4">
+    <Header/>
+    <BlogList/>
+    <Newsletter/>
+  </div>
+
+  <Footer/>
+</>
   )
 }
 
