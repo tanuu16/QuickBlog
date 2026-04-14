@@ -2,11 +2,11 @@ import React from 'react'
 import {Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
-import Dashboard from './pages/Admin/Dashboard'
-import AddBlog from './pages/Admin/AddBlog'
-import Layout from './pages/Admin/Layout'
-import ListBlog from './pages/Admin/ListBlog'
-import Comments from './pages/Admin/Comments'
+import Dashboard from "./pages/admin/Dashboard"
+import AddBlog from "./pages/admin/AddBlog"
+import Layout from "./pages/admin/Layout"
+import ListBlog from "./pages/admin/ListBlog"
+import Comments from "./pages/admin/Comments"
 import Login from './components/admin/Login'
 import 'quill/dist/quill.snow.css'
 import {Toaster} from 'react-hot-toast'
