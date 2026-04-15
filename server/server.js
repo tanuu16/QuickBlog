@@ -10,7 +10,11 @@ await connectDB()
 
 //middleware
 app.use(cors({
-  origin: ["https://blogss-websitee.vercel.app", "http://localhost:5173"], 
+  origin: [
+    "https://blogss-websitee.vercel.app", 
+    "http://localhost:5173",
+    "https://quick-blog-r5usg7epo-tanu-pawars-projects.vercel.app" // <-- Add this new URL
+  ], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
