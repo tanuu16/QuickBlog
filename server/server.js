@@ -5,15 +5,12 @@ import connectDB from './configs/db.js';
 import adminRouter from './routes/adminRoutes.js';
 import blogRouter from './routes/blogRoutes.js';
 
-
-
 const app = express();
 await connectDB()
 
-
 //middleware
 app.use(cors({
-  origin: "https://blogss-websitee.vercel.app",
+  origin: ["https://blogss-websitee.vercel.app", "http://localhost:5173"], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
@@ -29,10 +26,3 @@ const PORT=process.env.PORT ||3000;
 app.listen(PORT,()=>console.log(`Server is running on port ${PORT}`))
 
 export default app;
-
-
-
-
-
-
-
