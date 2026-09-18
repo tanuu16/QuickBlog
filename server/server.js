@@ -12,11 +12,14 @@ await connectDB()
 app.use(cors({
   origin: [
     "https://blogss-website.vercel.app",
+    "https://quick-blog-5l8dq5ag7-tanu-pawars-projects.vercel.app",
     "http://localhost:5173"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
+
+
 app.use(express.json());
 
 //routes
